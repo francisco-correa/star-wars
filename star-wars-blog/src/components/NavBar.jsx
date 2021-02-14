@@ -9,9 +9,9 @@ const Navbar = () => {
               <a className="navbar-brand text-white" href="#">Star wars</a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                aria-expanded="false" aria-label="Toggle navigation">
-                <span clasName="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
-              <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
+              <button type="button" data-target="#collapseNavbar" data-toggle="collapse" className="navbar-toggler">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="navbar-collapse collapse" id="collapseNavbar">
