@@ -1,33 +1,45 @@
 import React from "react";
+import Like from "./Like"
+//import getCharacters from "./Home"
+//import characters_id from "./Home"
 
-const CardCharacters = (props) => {
+
+const CardCharacters = () => {
+  
+  let p = {
+//  name : {getCharacters(){characters_id.result.properties.name}},
+    name : "Luke Skywalker",
+    description : "A person within the Star Wars universe",
+    gender : "gender: male",
+    skyn_color : "skin_color: fair",
+    hair_color : "hair_color: blond"
+  }
+  
   return (
     <div className="card" style={{ width: "18rem" }}>
       <img
         src="https://s2.glbimg.com/LttsvVoQZGHoIJsmdlXMULY336A=/e.glbimg.com/og/ed/f/original/2019/09/23/ea1e16061bdf92edb111d8808c6741a6.jpg"
         className="card-img-top"
-        alt="..."
+        alt="Luke Skywalker"
       />
       <div className="card-body">
         <h5 className="card-title" style={{ color: "black" }}>
-          {props.name}
+          {p.name}
         </h5>
         <p className="card-text" style={{ color: "black" }}>
-          {props.description}
+          {p.description}
         </p>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">{props.gender}</li>
-          <li className="list-group-item">{props.hair_color}</li>
-          <li className="list-group-item">{props.skyn_color}</li>
+          <li className="list-group-item">{p.gender}</li>
+          <li className="list-group-item">{p.hair_color}</li>
+          <li className="list-group-item">{p.skyn_color}</li>
         </ul>
-        <a type="button" href="#" className="btn btn-outline-primary">
-          Learn More!
-        </a>
-        <a href="#" className="card-link">
-          <i className="fa fa-heart"></i>
-        </a>
+        <a href="./information" className="btn btn-outline-primary">Learn More!!</a>
+         <Like/>
       </div>
     </div>
   );
 };
+
+
 export default CardCharacters;
